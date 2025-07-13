@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="wrapper">
+      <h1>Loan Calculator</h1>
+      <form id="loan-form">
+        <div class="form-group">
+          <div class="input-group">
+            <!-- <span class="span-style">$</span> -->
+            <input type="number" class="input-style" id="amount" placeholder="Loan Amount">
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="input-group">
+            <!-- <span class="span-style">%</span> -->
+            <input type="text" class="input-style" id="interest" placeholder="interest">
+          </div>
+        </div>
+        <div class="form-group">
+            <input type="text" class="input-style-repay" id="years" placeholder="Years to Repay">
+        </div>
+        <div class="form-group">
+          <input type="submit" value="calculate" class="input-style-calculate" id="calculate" placeholder="Years to Repay">
+        </div>
+      </form>
+      <div class="calculation-result" id="results">
+        <h1>Result</h1>
+       <div class="form-group">
+          <div class="input-group">
+            <!-- <span class="span-result">Monthly Payment</span> -->
+            <input type="number" class="input-style" id="monthly-payment" disabled>
+          </div>
+        </div
+        <div class="form-group">
+          <div class="input-group">
+            <!-- <span class="span-result">Total Payment</span> -->
+            <input type="number" class="input-style" id="total-payment" disabled>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="input-group">
+            <!-- <span class="span-result">total Interest</span> -->
+            <input type="number" class="input-style" id="total-interest" disabled>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script src="app.js"></script>
+</body>
+</html>
